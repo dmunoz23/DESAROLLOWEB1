@@ -14,7 +14,11 @@
 	<name>demoapp-form</name>
 	<description>Demo project for Spring Boot</description>
 	<properties>
-		<java.version>11</java.version>
+		<java.version>8</java.version>
+		<!-- Web dependencies -->
+		<webjars-bootstrap.version>4.6.0</webjars-bootstrap.version>
+		<webjars-jquery-ui.version>1.12.1</webjars-jquery-ui.version>
+		<webjars-jquery.version>3.6.0</webjars-jquery.version>
 	</properties>
 	<dependencies>
 		<dependency>
@@ -29,6 +33,28 @@
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-web</artifactId>
 		</dependency>
+
+		<!-- webjars -->
+		<dependency>
+			<groupId>org.webjars</groupId>
+			<artifactId>webjars-locator-core</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>org.webjars</groupId>
+			<artifactId>jquery</artifactId>
+			<version>${webjars-jquery.version}</version>
+		</dependency>
+		<dependency>
+			<groupId>org.webjars</groupId>
+			<artifactId>jquery-ui</artifactId>
+			<version>${webjars-jquery-ui.version}</version>
+		</dependency>
+		<dependency>
+			<groupId>org.webjars</groupId>
+			<artifactId>bootstrap</artifactId>
+			<version>${webjars-bootstrap.version}</version>
+		</dependency>
+		<!-- end of webjars -->
 
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
